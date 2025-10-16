@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – IRAQI El Yazid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">IRAQI El Yazid</div>
+      <nav id="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-nav" class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Compétences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Profil -->
+  <section id="profile" class="reveal">
+    <div class="profile-container">
+      <div class="profile-pic">
+        <img src="./assets/photo perso -photoaidcom-cropped.jpg" alt="Photo de profil">
+      </div>
+      <div class="profile-text">
+        <p class="intro">Bonjour, je suis</p>
+        <h1 class="name">IRAQI El Yazid</h1>
+        <p class="role">Étudiant en génie informatique</p>
+        <div class="btn-container">
+          <button class="btn primary" onclick="window.open('./assets/CV_IRAQI_El_Yazid_Alternance_2025.pdf')">Voir le CV</button>
+          <button class="btn secondary" onclick="location.href='#contact'">Contact</button>
+        </div>
+        <div class="socials">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/iraqi-elyazid/'">
+          <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/ElYazidIraqi'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="about" class="reveal">
+    <div class="container">
+      <h2 class="section-title">À propos de moi</h2>
+      <div class="about-content">
+        <div class="about-card">
+          <img src="./assets/experience.png" alt="expérience" class="icon">
+          <h3>Expériences</h3>
+          <p>Participation au 24h du Hack.<br>Job étudiant chez McDonald's.<br>Stage de 6 semaines en entreprise.</p>
+        </div>
+        <div class="about-card">
+          <img src="./assets/education.png" alt="éducation" class="icon">
+          <h3>Formation</h3>
+          <p>Bachelor Développement Web – NWS<br>BTS CIEL – Lycée de l’Hyrome<br>Baccalauréat Sciences Physiques – Maroc</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Material UI</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Autres</h3>
+          <ul>
+            <li>Langage C</li>
+            <li>Gestion de projets</li>
+            <li>Travail en équipe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Projets</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="./assets/Projetelyazid1.png" alt="Projet 1" class="project-img">
+          <h3>Générateur de mots de passe</h3>
+          <p>Application web permettant de générer des mots de passe sécurisés.</p>
+          <button class="btn secondary" onclick="location.href='https://github.com/ElYazidIraqi/Password-Generator-'">Voir sur GitHub</button>
+        </div>
+        <div class="project-card">
+          <img src="./assets/Projetelyazid2.png" alt="Projet 2" class="project-img">
+          <h3>Projet MaraisRsite</h3>
+          <p>Solution IT sécurisée de surveillance qualité de l’air en temps réel.</p>
+          <button class="btn secondary" onclick="location.href='https://github.com/ElYazidIraqi/MaraisRsite'">Voir sur GitHub</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="reveal">
+    <div class="container">
+      <h2 class="section-title">Contactez-moi</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="./assets/email.png" alt="Email" class="icon">
+          <a href="mailto:elyazid.iraqi04@gmail.com">elyazid.iraqi04@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon">
+          <a href="https://www.linkedin.com/in/iraqi-elyazid/">LinkedIn</a>
+        </div>
+        <div class="contact-item">
+          <img src="./assets/phone.png" alt="Téléphone" class="icon">
+          <a href="tel:+33635162767">+33 6 35 16 27 67</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 IRAQI El Yazid — Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

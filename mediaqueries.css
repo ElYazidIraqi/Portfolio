@@ -1,0 +1,95 @@
+/* ------------------- */
+/* MEDIA QUERIES */
+/* ------------------- */
+
+/* --- Grand écran --- */
+@media (max-width: 1200px) {
+    .container {
+      width: 95%;
+    }
+  }
+  
+  /* --- Tablettes --- */
+  @media (max-width: 992px) {
+    .nav-links {
+      display: none;
+    }
+  
+    #hamburger-nav {
+      display: block;
+    }
+  
+    .profile-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-content,
+    .skills-grid,
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-card,
+    .skill-category,
+    .about-card {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  /* --- Petits écrans --- */
+  @media (max-width: 768px) {
+    .name {
+      font-size: 2rem;
+    }
+  
+    .role {
+      font-size: 1rem;
+    }
+  
+    .btn-container {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .nav-container {
+      height: 70px;
+    }
+  
+    .menu-links {
+      top: 60px;
+      right: 10px;
+    }
+  
+    .menu-links a {
+      padding: 12px 20px;
+    }
+  }
+  
+  /* --- Très petits écrans --- */
+  @media (max-width: 480px) {
+    .profile-pic img {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .section-title {
+      font-size: 1.7rem;
+    }
+  
+    .btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  
+    footer p {
+      font-size: 0.8rem;
+    }
+  }
+  
